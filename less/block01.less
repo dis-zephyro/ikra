@@ -1,7 +1,45 @@
 .b01 {
 	color: #fff;
 	height: 895px;
+	position: relative;
 	background: url("../img/b01_bg.jpg") top center no-repeat;
+
+	.bg-block {
+		top:0;
+		left: 0;
+		z-index: 5;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+
+		.bg-slider {
+			width: 100%;
+			height: 100%;
+			text-align: center;
+
+			.slider-item {
+				width: 100%;
+				height: 100%;
+
+				&.item1 {
+					background: url("../img/b01_bg.jpg") top center no-repeat;
+				}
+
+				&.item2 {
+					background: url("../img/b01_bg.jpg") top center no-repeat;
+				}
+			}
+		}
+	}
+
+	.content-block {
+		top:0;
+		left: 0;
+		z-index: 20;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+	}
 
 	.container {
 		height: 100%;

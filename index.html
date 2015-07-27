@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="js/vendor/jquery.fancybox/jquery.fancybox.css">
         <link rel="stylesheet" href="js/vendor/slick/slick.css">
+        <link rel="stylesheet" href="js/vendor/flux/style.css">
         <link rel="stylesheet/less" href="less/main.less">
         <script src="js/vendor/less.min.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -19,13 +20,24 @@
     
     <body>
         <section class="b01">
-            <div class="container">
-                <div class="logo ir"></div>
-                <div class="phone">8 800 555 45 05<span>звоните круглосуточно</span></div>
-                <h1>Красная икра<span>с доставкой по Москве и МО</span></h1>
-                <div class="text">Бесплатная дегустация перед покупкой у Вас дома или в офисе</div>
-                <a href="#popup" class="btn btn-popup">Заказать бесплатную дегустацию</a>
-                <a href="#block02" class="btn-scroll"></a>
+            <div class="bg-block">
+                <div class="bg-slider">
+                    <img src="img/b01_bg.jpg">
+                    <img src="img/b01_bg.jpg">
+                    <img src="img/b01_bg.jpg">
+                </div>
+
+            </div>
+
+            <div class="content-block">
+                <div class="container">
+                    <div class="logo ir"></div>
+                    <div class="phone">8 800 555 45 05<span>звоните круглосуточно</span></div>
+                    <h1>Красная икра<span>с доставкой по Москве и МО</span></h1>
+                    <div class="text">Бесплатная дегустация перед покупкой у Вас дома или в офисе</div>
+                    <a href="#popup" class="btn btn-popup">Заказать бесплатную дегустацию</a>
+                    <a href="#block02" class="btn-scroll"></a>
+                </div>
             </div>
         </section>
 
@@ -198,7 +210,7 @@
                             <p>4500р за 500г</p>
                             <p>2500р за 200г</p>
                         </div>
-                        <a href="#popup" class="btn btn-mini btn-popup">Узнать подробнее</a>
+                        <a href="#caviar1" class="btn btn-mini btn-more">Узнать подробнее</a>
                     </li>
 
                     <li>
@@ -207,7 +219,7 @@
                             <p>4500р за 500г</p>
                             <p>2500р за 200г</p>
                         </div>
-                        <a href="#popup" class="btn btn-mini btn-popup">Узнать подробнее</a>
+                        <a href="#caviar2" class="btn btn-mini btn-more">Узнать подробнее</a>
                     </li>
                 </ul>
             </div>
@@ -270,16 +282,104 @@
                     </p>
                 </form>
             </div>
+        </div>
 
-            <!-- Popup Video -->
-            <div class="hidden">
-                <div id="video-popup">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ap3HlpbEVk0" frameborder="0" allowfullscreen></iframe>
+        <!-- Popup Video -->
+        <div class="hidden">
+            <div id="video-popup">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ap3HlpbEVk0" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Popup Caviar1 -->
+
+        <div class="hidden">
+            <div class="caviar" id="caviar1">
+                <span class="btn-close"></span>
+                <div class="left-col">
+                    <div class="caviar-description-title">Энергетическая ценность</div>
+                    <table class="caviar-description">
+                        <tr>
+                            <td>на 100 грамм продукта</td>
+                            <td>Белков</td>
+                            <td>Жиров</td>
+                            <td>Калорий</td>
+                        </tr>
+                        <tr>
+                            <td>Баранина</td>
+                            <td>16,2</td>
+                            <td>5</td>
+                            <td>300</td>
+                        </tr>
+                        <tr>
+                            <td>Баранина 1-й категории</td>
+                            <td>16,1</td>
+                            <td>16,9</td>
+                            <td>223</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="right-col">
+                    <div class="caviar-title">Икра Нерки</div>
+                    <p><strong>Вкусовые особенности: </strong></p>
+                    <p>Изучение структурной организации вкусового аппарата радужной форели Parasalmo mykiss, проведённое с применением метода. Изучение структурной организации вкусового аппарата радужной форели Parasalmo mykiss, проведённое с применением метода.</p>
+                    <ul>
+                        <li>Цвет икры: оранжево-красный</li>
+                        <li>Размер икринок: 3-5мм</li>
+                        <li>Страна - производитель: Россия, Камчатка</li>
+                        <li>Условия хранения: -4 -6 градусов</li>
+                        <li>Упаковка: Пластиковые контейнеры 200 г и 500 г</li>
+                    </ul>
+                    <a href="#popup" class="btn btn-red btn-popup">Продегустировать все виды икры</a>
                 </div>
             </div>
         </div>
+
+        <div class="hidden2">
+            <div class="caviar" id="caviar2">
+                <span class="btn-close"></span>
+                <div class="left-col">
+                    <div class="caviar-description-title">Энергетическая ценность</div>
+                    <table class="caviar-description">
+                        <tr>
+                            <td>на 100 грамм продукта</td>
+                            <td>Белков</td>
+                            <td>Жиров</td>
+                            <td>Калорий</td>
+                        </tr>
+                        <tr>
+                            <td>Баранина</td>
+                            <td>16,2</td>
+                            <td>5</td>
+                            <td>300</td>
+                        </tr>
+                        <tr>
+                            <td>Баранина 1-й категории</td>
+                            <td>16,1</td>
+                            <td>16,9</td>
+                            <td>223</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="right-col">
+                    <div class="caviar-title">Икра Нерки</div>
+                    <p><strong>Вкусовые особенности: </strong></p>
+                    <p>Изучение структурной организации вкусового аппарата радужной форели Parasalmo mykiss, проведённое с применением метода. Изучение структурной организации вкусового аппарата радужной форели Parasalmo mykiss, проведённое с применением метода.</p>
+                    <ul>
+                        <li>Цвет икры: оранжево-красный</li>
+                        <li>Размер икринок: 3-5мм</li>
+                        <li>Страна - производитель: Россия, Камчатка</li>
+                        <li>Условия хранения: -4 -6 градусов</li>
+                        <li>Упаковка: Пластиковые контейнеры 200 г и 500 г</li>
+                    </ul>
+                    <a href="#popup" class="btn btn-red btn-popup">Продегустировать все виды икры</a>
+                </div>
+            </div>
+        </div>
+
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/vendor/flux/flux.min.js"></script>
         <script src="js/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
         <script src="js/vendor/slick/slick.min.js"></script>
         <script src="js/main.js"></script>

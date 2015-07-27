@@ -1,5 +1,16 @@
 //  слайдер
 
+
+$(function(){
+    if(!flux.browser.supportsTransitions)
+        alert("Flux Slider requires a browser that supports CSS3 transitions");
+
+    window.f = new flux.slider('.bg-slider', {
+        pagination: true
+    });
+});
+
+
 $('.tasting-slider').slick({
     arrows: false,
     autoplay: false,
@@ -22,6 +33,16 @@ $(".cert-large, .video-play").fancybox({
 
 $(".btn-popup").fancybox({
     "padding" : 0
+});
+
+
+$(".btn-more").fancybox({
+    'padding' : 0,
+    'closeBtn' : false
+});
+
+$('.btn-close').click(function(){
+    $.fancybox.close();
 });
 
 
