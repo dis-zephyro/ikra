@@ -461,15 +461,16 @@ html {
 }
 .b08 .tasting ul {
   width: 800px;
+  height: 450px;
   margin: 0 auto;
 }
-.b08 .tasting li {
+.b08 .tasting .tasting-video {
   height: 0;
   width: 100%;
   position: relative;
   padding-bottom: 56.25%;
 }
-.b08 .tasting li iframe {
+.b08 .tasting .tasting-video iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -656,7 +657,7 @@ html {
   border-radius: 8px;
 }
 .btn:hover {
-  background: #f5f5f5;
+  background: #f0f0f0;
 }
 .btn:active {
   top: 1px;
