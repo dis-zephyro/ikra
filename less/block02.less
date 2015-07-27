@@ -1,0 +1,165 @@
+.b02 {
+	padding: 60px 0;
+	background: #fff;
+
+	h3 {
+		color: #505961;
+		margin-bottom: 100px;
+	}
+
+	.box-title {
+		color: #b2a376;
+		font-size: 30px;
+		line-height: 30px;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	.step {
+		margin: 0 -40px;
+
+		li {
+			float: left;
+			width: 33.33%;
+			font-size: 16px;
+			line-height: 26px;
+			text-align: center;
+			position: relative;
+			margin-bottom: 50px;
+			padding: 135px 40px 0 40px;
+
+			.step-number {
+				color: #f07410;
+				font-size: 17px;
+				font-weight: 700;
+				line-height: 20px;
+				margin-bottom: 5px;
+				text-transform: uppercase;
+				font-family: @font-opensans;
+			}
+
+			.step-name {
+				color: #f07410;
+				font-size: 17px;
+				font-weight: 700;
+				line-height: 20px;
+				margin-bottom: 10px;
+				text-transform: uppercase;
+				font-family: @font-opensans;
+			}
+
+			&:before {
+				top: 38px;
+				right: -10px;
+				width: 19px;
+				height: 32px;
+				content: " ";
+				position: absolute;
+				background: url("../img/step-arrow.png") 0 0 no-repeat;
+			}
+
+			&.item1 {
+				background: url("../img/b02_item1.png") top center no-repeat;
+			}
+
+			&.item2 {
+				background: url("../img/b02_item2.png") top center no-repeat;
+			}
+
+			&.item3 {
+				background: url("../img/b02_item3.png") top center no-repeat;
+
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.vendor {
+
+		li {
+			float: left;
+			width: 168px;
+			padding: 16px;
+			margin: 0 48px;
+			border: 5px solid #fafafa;
+			.box-shadow(0px 5px 8px 0px rgba(0, 0, 0, 0.3));
+
+			a {
+				display: block;
+			}
+		}
+	}
+
+
+	@media (max-width: 1269px) {
+
+		.step {
+			margin: 0 -15px;
+		}
+
+		.vendor {
+			margin-left: 0;
+			margin-right: 0;
+
+			li {
+				float: left;
+				width: 168px;
+				padding: 16px;
+				margin: 0 38px;
+				border: 5px solid #fafafa;
+				.box-shadow(0px 5px 8px 0px rgba(0, 0, 0, 0.3));
+
+				a {
+					display: block;
+				}
+			}
+		}
+
+	}
+
+	@media (max-width: 1023px) {
+
+		.step {
+			margin: 0;
+
+			li {
+				float: none;
+				width: 100%;
+
+				&:before {
+					top: auto;
+					right: auto;
+					left: 50%;
+					bottom: -35px;
+					width: 32px;
+					height: 19px;
+					content: " ";
+					margin-left: -16px;
+					position: absolute;
+					background-position: 0 -45px;
+				}
+
+			}
+		}
+
+		.vendor {
+			margin-left: -10px;
+			margin-right: -10px;
+
+			li {
+				float: left;
+				width: 124px;
+				padding: 8px;
+				margin: 0 15px;
+				border: 5px solid #fafafa;
+				.box-shadow(0px 5px 8px 0px rgba(0, 0, 0, 0.3));
+
+				a {
+					display: block;
+				}
+			}
+		}
+	}
+}

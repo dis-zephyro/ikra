@@ -1,0 +1,48 @@
+.b06 {
+	height: 900px;
+	padding-top: 235px;
+	background: url("../img/b06_bg.jpg") top center no-repeat;
+
+	.content-box {
+		margin: 0 65px;
+		padding: 70px 0;
+		color: #343434;
+		font-size: 26px;
+		line-height: 40px;
+		text-align: center;
+		background: #ffffff;
+		.box-shadow(0px 5px 8px 0px rgba(0, 0, 0, 0.3));
+
+		h2 {
+			color: #747b82;
+			margin-bottom: 40px;
+		}
+
+		p {
+			margin-bottom: 30px;
+		}
+	}
+
+	@media (max-width: 1269px) {
+		.content-box {
+			margin: 0 50px;
+		}
+	}
+
+	@media (max-width: 1023px) {
+		height: auto;
+		padding-top: 170px;
+		padding-bottom: 170px;
+
+		.content-box {
+			margin: 0 20px;
+			padding: 40px 0;
+			font-size: 22px;
+			line-height: 30px;
+
+			p {
+				margin-bottom: 24px;
+			}
+		}
+	}
+}

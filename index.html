@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=1024">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
@@ -28,6 +28,7 @@
                 <a href="#block02" class="btn-scroll"></a>
             </div>
         </section>
+
         <section class="b02" id="block02">
             <div class="container">
                 <h3>Для максимального обеспечения качества - выбор производителей Икры проводился в 3 этапа</h3>
@@ -73,6 +74,7 @@
                 </ul>
             </div>
         </section>
+
         <section class="b03">
             <div class="container">
                 <ul class="list-hand">
@@ -83,6 +85,7 @@
                 </ul>
             </div>
         </section>
+
         <section class="b04">
             <div class="container">
                 <h2>Адреса предприятий</h2>
@@ -96,6 +99,7 @@
                 </ul>
             </div>
         </section>
+
         <section class="b05">
             <div class="green-sheet"></div>
             <div class="egg"></div>
@@ -137,6 +141,7 @@
                 </div>
             </div>
         </section>
+
         <section class="b06">
             <div class="container">
                 <div class="content-box">
@@ -148,9 +153,12 @@
                 </div>
             </div>
         </section>
+
         <section class="b07">
-            <div class="text">Как икра попадет к Вам на стол ?</div>
+            <a href="#video-popup" class="video-play"></a>
+            <div class="text">Как икра попадет к <strong>Вам на стол ?</strong></div>
         </section>
+
         <section class="b08">
             <div class="container">
                 <h2>Дегустация - это вкусно и бесплатно!</h2>
@@ -180,6 +188,7 @@
                 </div>
             </div>
         </section>
+
         <section class="b09">
             <div class="container">
                 <ul class="clearfix">
@@ -203,6 +212,7 @@
                 </ul>
             </div>
         </section>
+
         <section class="b10">
             <div class="container">
                 <h2>Не знаете какую икру Выбрать?</h2>
@@ -242,6 +252,32 @@
             </div>
         </section>
 
+        <div class="hidden">
+            <div class="form-block" id="popup">
+                <div class="form-title">Оставьте заявку</div>
+                <form enctype="multipart/form-data" method="post" class="cform mini form">
+                    <ol class="cf-ol">
+                        <li>
+                            <input type="text" name="cf8_field_3" class="single" value="Введите Ваше имя" onfocus="clearField(this)" onblur="setField(this)"/>
+                        </li>
+                        <li>
+                            <input type="text" name="cf8_field_4" class="single fldrequired" value="Введите Ваш телефон" onfocus="clearField(this)" onblur="setField(this)"/>
+                            <input type="hidden" name="cf8_field_4_regexp" value="^[+]?[-0-9\(\) ]{10,20}$"/>
+                        </li>
+                    </ol>
+                    <p class="cf-sb">
+                        <input type="submit" name="sendbutton8" class="sendbutton" value="Оставить заявку" onclick="return cforms_validate('8', false)"/>
+                    </p>
+                </form>
+            </div>
+
+            <!-- Popup Video -->
+            <div class="hidden">
+                <div id="video-popup">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ap3HlpbEVk0" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>

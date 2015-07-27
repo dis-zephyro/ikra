@@ -6,7 +6,6 @@
 	src: url('Hermes_gdi.eot?#iefix') format('embedded-opentype'),
 		url('Hermes_gdi.woff') format('woff'),
 		url('Hermes_gdi.ttf') format('truetype'),
-		url('Hermes_gdi.otf') format('opentype'),
 		url('Hermes_gdi.svg#Hermes-Regular') format('svg');
 	font-weight: 400;
 	font-style: normal;
