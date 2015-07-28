@@ -10,7 +10,7 @@ $(function(){
     });
 });
 
-
+/*
 $('.tasting-slider').slick({
     arrows: false,
     autoplay: false,
@@ -26,7 +26,25 @@ $('.tasting-next').click(function(){
     $('.tasting-slider').slick('slickNext');
 });
 
+*/
 
+var gallery = $("#gallery1").waterwheelCarousel({
+    flankingItems: 2,
+    sizeMultiplier: .5,
+    opacityMultiplier: 1,
+    horizonOffset: 0,
+    separationMultiplier: .4
+});
+
+$('.prev').bind('click', function () {
+    gallery.prev();
+    return false
+});
+
+$('.next').bind('click', function () {
+    gallery.next();
+    return false;
+});
 
 
 $(".cert-large, .video-play").fancybox({
