@@ -850,6 +850,7 @@
 .b10 .footer .call-text {
   top: 50px;
   left: 60px;
+  text-align: left;
   font-size: 30px;
   line-height: 40px;
   position: absolute;
@@ -857,6 +858,7 @@
 .b10 .footer .phone {
   top: 50px;
   right: 60px;
+  text-align: left;
   font-size: 36px;
   font-weight: 700;
   line-height: 40px;
@@ -875,10 +877,12 @@
   display: block;
 }
 .b10 .footer .footer-text .address {
+  float: none;
   font-size: 14px;
   margin-bottom: 3px;
 }
 .b10 .footer .footer-text .copy {
+  float: none;
   font-size: 12px;
   text-transform: uppercase;
 }
@@ -919,43 +923,43 @@
     float: none;
     margin: 0 auto;
   }
-}
-.b10 .footer {
-  left: 0;
-  right: 0;
-  bottom: 0;
-  color: #fff;
-  height: 180px;
-  position: absolute;
-}
-.b10 .footer .footer-inner {
-  padding-top: 115px;
-}
-.b10 .footer .call-text {
-  top: 40px;
-  left: 0;
-}
-.b10 .footer .phone {
-  top: 40px;
-  right: 0;
-}
-.b10 .footer .footer-text {
-  padding-top: 35px;
-  text-align: left;
-}
-.b10 .footer .footer-text span {
-  display: block;
-}
-.b10 .footer .footer-text .address {
-  float: left;
-  font-size: 14px;
-  margin-bottom: 3px;
-}
-.b10 .footer .footer-text .copy {
-  float: right;
-  text-align: right;
-  font-size: 12px;
-  text-transform: uppercase;
+  .b10 .footer {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    height: 180px;
+    position: absolute;
+  }
+  .b10 .footer .footer-inner {
+    padding-top: 115px;
+  }
+  .b10 .footer .call-text {
+    top: 40px;
+    left: 0;
+  }
+  .b10 .footer .phone {
+    top: 40px;
+    right: 0;
+  }
+  .b10 .footer .footer-text {
+    padding-top: 35px;
+    text-align: left;
+  }
+  .b10 .footer .footer-text span {
+    display: block;
+  }
+  .b10 .footer .footer-text .address {
+    float: left;
+    font-size: 14px;
+    margin-bottom: 3px;
+  }
+  .b10 .footer .footer-text .copy {
+    float: right;
+    text-align: right;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
 }
 /* Base styles
    ========================= */

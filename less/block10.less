@@ -83,6 +83,7 @@
 		.call-text {
 			top: 50px;
 			left: 60px;
+			text-align: left;
 			font-size: 30px;
 			line-height: 40px;
 			position: absolute;
@@ -91,6 +92,7 @@
 		.phone {
 			top: 50px;
 			right: 60px;
+			text-align: left;
 			font-size: 36px;
 			font-weight: 700;
 			line-height: 40px;
@@ -112,11 +114,13 @@
 			}
 
 			.address {
+				float: none;
 				font-size: 14px;
 				margin-bottom: 3px;
 			}
 
 			.copy {
+				float: none;
 				font-size: 12px;
 				text-transform: uppercase;
 			}
@@ -169,49 +173,49 @@
 			float: none;
 			margin: 0 auto;
 		}
-	}
 
-	.footer {
-		left: 0;
-		right: 0;
-		bottom: 0;
-		color: #fff;
-		height: 180px;
-		position: absolute;
-
-		.footer-inner {
-			padding-top: 115px;
-		}
-
-		.call-text {
-			top: 40px;
+		.footer {
 			left: 0;
-		}
-
-		.phone {
-			top: 40px;
 			right: 0;
-		}
+			bottom: 0;
+			color: #fff;
+			height: 180px;
+			position: absolute;
 
-		.footer-text {
-			padding-top: 35px;
-			text-align: left;
-
-			span {
-				display: block;
+			.footer-inner {
+				padding-top: 115px;
 			}
 
-			.address {
-				float: left;
-				font-size: 14px;
-				margin-bottom: 3px;
+			.call-text {
+				top: 40px;
+				left: 0;
 			}
 
-			.copy {
-				float: right;
-				text-align: right;
-				font-size: 12px;
-				text-transform: uppercase;
+			.phone {
+				top: 40px;
+				right: 0;
+			}
+
+			.footer-text {
+				padding-top: 35px;
+				text-align: left;
+
+				span {
+					display: block;
+				}
+
+				.address {
+					float: left;
+					font-size: 14px;
+					margin-bottom: 3px;
+				}
+
+				.copy {
+					float: right;
+					text-align: right;
+					font-size: 12px;
+					text-transform: uppercase;
+				}
 			}
 		}
 	}
