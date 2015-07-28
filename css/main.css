@@ -1161,7 +1161,6 @@ html {
   height: 770px;
   padding: 65px 80px;
   background: #fff;
-  background: url("../img/product/caviar01.jpg") 60px 90px no-repeat;
 }
 .caviar .btn-close {
   top: 20px;
@@ -1177,8 +1176,10 @@ html {
   float: left;
   color: #262525;
   padding-right: 80px;
-  padding-top: 480px;
   border-right: 1px solid #9a9999;
+}
+.caviar .left-col .caviar-image {
+  margin-bottom: 40px;
 }
 .caviar .left-col .caviar-description-title {
   font-size: 25px;
@@ -1211,7 +1212,7 @@ html {
   margin-bottom: 30px;
 }
 .caviar .right-col ul {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 /* Typography
    ========================= */
