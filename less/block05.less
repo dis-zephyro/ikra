@@ -1,14 +1,14 @@
 .b05 {
 	padding-bottom: 60px;
 	position: relative;
-	background: url("../img/b05_bg.jpg") center 107px no-repeat;
+	background: #fff url("../img/b05_bg.jpg") center 107px no-repeat;
 
 	.green-sheet {
 		left: 0;
 		z-index: 1;
 		bottom: 150px;
-		width: 227px;
-		height: 354px;
+		width: 205px;
+		height: 329px;
 		position: absolute;
 		background: url("../img/green-sheet.png") 100% 0 no-repeat;
 	}
@@ -16,9 +16,9 @@
 	.egg {
 		right: 0;
 		z-index: 1;
-		bottom: 170px;
-		width: 209px;
-		height: 158px;
+		bottom: 200px;
+		width: 220px;
+		height: 164px;
 		position: absolute;
 		background: url("../img/egg.png") 100% 0 no-repeat;
 	}
@@ -115,18 +115,35 @@
 		}
 	}
 
-	.video {
-		width: 100%;
+	.video-block {
+		width: 1110px;
+		margin: 0 auto;
 		position: relative;
-		padding-bottom: 50.25%;
-		height: 0;
 
-		iframe {
+
+		.b05-video {
+			top: 50%;
+			left: 50%;
+			width: 133px;
+			height: 132px;
+			display: block;
+			cursor: pointer;
+			padding-top: 30%;
+			margin-top: -66px;
+			margin-left: -66px;
 			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
+			background: url("../img/icon-play.png") 0 0 no-repeat;
+		}
+
+		.video-text {
+			left: 40px;
+			right: 40px;
+			bottom: 40px;
+			color: #ffffff;
+			font-size: 24px;
+			line-height: 36px;
+			position: absolute;
+			text-align: center;
 		}
 	}
 
@@ -170,6 +187,10 @@
 			.caviar-test-title {
 				font-size: 22px;
 			}
+		}
+
+		.video-block {
+			width: 100%;
 		}
 	}
 
@@ -219,6 +240,16 @@
 
 			.caviar-test-title {
 				font-size: 22px;
+			}
+		}
+
+		.video-block {
+			width: 100%;
+
+
+			.video-text {
+				font-size: 16px;
+				line-height: 20px;
 			}
 		}
 	}

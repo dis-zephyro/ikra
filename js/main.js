@@ -27,6 +27,8 @@ $('.tasting-next').click(function(){
 });
 
 
+
+
 $(".cert-large, .video-play").fancybox({
     "padding" : 0
 });
@@ -45,6 +47,38 @@ $('.btn-close').click(function(){
     $.fancybox.close();
 });
 
+
+// Подключние Яндекс-Карты
+
+ymaps.ready(init);
+
+function init () {
+    var myMap = new ymaps.Map("map", {
+        center: [50.6408,142.9328],
+        zoom: 9,
+        controls: ['zoomControl']
+    });
+
+    myMap.geoObjects
+        .add(new ymaps.Placemark([50.8603,142.1637], {
+            balloonContent: 'г. Сахалин, ул. Лиственничная аллея д. 2 Д'
+        }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/placemark.png',
+            iconImageSize: [41, 58],
+            iconImageOffset: [-20, -59]
+        }))
+        .add(new ymaps.Placemark([50.6809,143.4821], {
+            balloonContent: 'г. Сахалин, ул. Лиственничная аллея д. 2 Д'
+        }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/placemark.png',
+            iconImageSize: [41, 58],
+            iconImageOffset: [-20, -59]
+        }));
+
+    myMap.behaviors.disable('scrollZoom');
+}
 
 
 // подсказки для форм (можноу удалить)

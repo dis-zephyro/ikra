@@ -341,67 +341,41 @@
 }
 .b04 {
   height: 680px;
-  padding-top: 90px;
-  background: url("../img/b04_bg.jpg") top center no-repeat;
-}
-.b04 h2 {
-  color: #505961;
-  padding-bottom: 0;
-}
-.b04 .address {
-  width: 600px;
-  height: 550px;
-  margin: 0 auto;
-  padding: 5px 0;
   position: relative;
 }
-.b04 .address li {
-  min-height: 60px;
-  background: url("../img/placemark.png") 0 0 no-repeat;
+.b04 h2 {
+  top: 90px;
+  left: 50%;
+  width: 460px;
+  color: #505961;
+  padding-bottom: 0;
+  position: absolute;
+  margin-left: -230px;
 }
-.b04 .address li span {
-  width: 280px;
-  color: #747b82;
-  font-size: 16px;
-  background: #fff;
-  text-align: left;
-  line-height: 24px;
-  padding: 20px 10px;
-  display: inline-block;
-  -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.3);
-}
-.b04 .address li.item1 {
-  padding-left: 55px;
-  margin: 230px 0 0 0;
-}
-.b04 .address li.item2 {
-  text-align: right;
-  margin: 55px 70px 0 0;
-  padding-right: 55px;
-  background-position: 100% 0;
+.b04 #map {
+  width: 100%;
+  height: 100%;
 }
 .b05 {
   padding-bottom: 60px;
   position: relative;
-  background: url("../img/b05_bg.jpg") center 107px no-repeat;
+  background: #ffffff url("../img/b05_bg.jpg") center 107px no-repeat;
 }
 .b05 .green-sheet {
   left: 0;
   z-index: 1;
   bottom: 150px;
-  width: 227px;
-  height: 354px;
+  width: 205px;
+  height: 329px;
   position: absolute;
   background: url("../img/green-sheet.png") 100% 0 no-repeat;
 }
 .b05 .egg {
   right: 0;
   z-index: 1;
-  bottom: 170px;
-  width: 209px;
-  height: 158px;
+  bottom: 200px;
+  width: 220px;
+  height: 164px;
   position: absolute;
   background: url("../img/egg.png") 100% 0 no-repeat;
 }
@@ -484,18 +458,33 @@
   margin-bottom: 15px;
   display: block;
 }
-.b05 .video {
-  width: 100%;
+.b05 .video-block {
+  width: 1110px;
+  margin: 0 auto;
   position: relative;
-  padding-bottom: 50.25%;
-  height: 0;
 }
-.b05 .video iframe {
+.b05 .video-block .b05-video {
+  top: 50%;
+  left: 50%;
+  width: 133px;
+  height: 132px;
+  display: block;
+  cursor: pointer;
+  padding-top: 30%;
+  margin-top: -66px;
+  margin-left: -66px;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  background: url("../img/icon-play.png") 0 0 no-repeat;
+}
+.b05 .video-block .video-text {
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 36px;
+  position: absolute;
+  text-align: center;
 }
 @media (max-width: 1269px) {
   .b05 .compare {
@@ -529,6 +518,9 @@
   }
   .b05 .caviar-test .caviar-test-title {
     font-size: 22px;
+  }
+  .b05 .video-block {
+    width: 100%;
   }
 }
 @media (max-width: 1023px) {
@@ -569,6 +561,13 @@
   }
   .b05 .caviar-test .caviar-test-title {
     font-size: 22px;
+  }
+  .b05 .video-block {
+    width: 100%;
+  }
+  .b05 .video-block .video-text {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 .b06 {
