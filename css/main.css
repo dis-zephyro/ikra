@@ -359,7 +359,7 @@
 .b05 {
   padding-bottom: 60px;
   position: relative;
-  background: #ffffff url("../img/b05_bg.jpg") center 107px no-repeat;
+  background: #ffffff url("../img/b05_bg.jpg") center bottom no-repeat;
 }
 .b05 .green-sheet {
   left: 0;
