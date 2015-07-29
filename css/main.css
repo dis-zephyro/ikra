@@ -1125,7 +1125,7 @@ html {
   text-decoration: none;
   display: inline-block;
   font-family: 'Hermes-Regular';
-  text-transform: capitalize;
+  text-transform: none;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
