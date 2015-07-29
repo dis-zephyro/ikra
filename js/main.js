@@ -1,15 +1,15 @@
 //  слайдер
-/*
 
-$(function(){
-    if(!flux.browser.supportsTransitions)
-        alert("Flux Slider requires a browser that supports CSS3 transitions");
 
-    window.f = new flux.slider('.bg-slider', {
-        pagination: true
-    });
+$('.bg-slider').slick({
+    arrows: false,
+    autoplay: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    cssEase: 'linear'
 });
-*/
+
 
 $('.tasting-slider').slick({
     arrows: false,

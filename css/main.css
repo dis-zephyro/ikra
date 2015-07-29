@@ -84,23 +84,27 @@
   z-index: 5;
   width: 100%;
   height: 100%;
-  display: none;
-  position: absolute;
 }
 .b01 .bg-block .bg-slider {
   width: 100%;
-  height: 100%;
+  height: 895px;
   text-align: center;
 }
-.b01 .bg-block .bg-slider .slider-item {
+.b01 .bg-block .bg-slider li {
   width: 100%;
-  height: 100%;
+  height: 895px;
 }
-.b01 .bg-block .bg-slider .slider-item.item1 {
+.b01 .bg-block .bg-slider li.item1 {
   background: url("../img/b01_bg.jpg") top center no-repeat;
 }
-.b01 .bg-block .bg-slider .slider-item.item2 {
-  background: url("../img/b01_bg.jpg") top center no-repeat;
+.b01 .bg-block .bg-slider li.item2 {
+  background: url("../img/b01_bg-2.jpg") top center no-repeat;
+}
+.b01 .bg-block .bg-slider li.item3 {
+  background: url("../img/b01_bg-3.jpg") top center no-repeat;
+}
+.b01 .bg-block .bg-slider li.item4 {
+  background: url("../img/b01_bg-4.jpg") top center no-repeat;
 }
 .b01 .content-block {
   top: 0;
@@ -159,9 +163,6 @@
   background: url("../img/btn-scroll.png") 0 0 no-repeat;
 }
 @media (max-width: 1249px) {
-  .b01 .bg-block {
-    display: none;
-  }
   .b01 .logo {
     left: 5px;
   }
