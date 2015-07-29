@@ -84,11 +84,13 @@
   z-index: 5;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 .b01 .bg-block .bg-slider {
   width: 100%;
   height: 895px;
   text-align: center;
+  overflow: hidden;
 }
 .b01 .bg-block .bg-slider li {
   width: 100%;
