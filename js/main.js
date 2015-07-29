@@ -1,5 +1,5 @@
 //  слайдер
-
+/*
 
 $(function(){
     if(!flux.browser.supportsTransitions)
@@ -9,7 +9,7 @@ $(function(){
         pagination: true
     });
 });
-
+*/
 
 $('.tasting-slider').slick({
     arrows: false,

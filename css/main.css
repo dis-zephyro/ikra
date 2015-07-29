@@ -84,6 +84,7 @@
   z-index: 5;
   width: 100%;
   height: 100%;
+  display: none;
   position: absolute;
 }
 .b01 .bg-block .bg-slider {
@@ -158,6 +159,9 @@
   background: url("../img/btn-scroll.png") 0 0 no-repeat;
 }
 @media (max-width: 1249px) {
+  .b01 .bg-block {
+    display: none;
+  }
   .b01 .logo {
     left: 5px;
   }
@@ -168,6 +172,9 @@
 @media (max-width: 1023px) {
   .b01 {
     text-align: center;
+  }
+  .b01 .bg-block {
+    display: none;
   }
   .b01 h1 {
     text-align: center;
@@ -525,7 +532,7 @@
 }
 @media (max-width: 1023px) {
   .b05 h2 {
-    margin-bottom: 290px;
+    margin-bottom: 350px;
   }
   .b05 .compare {
     padding-top: 150px;
@@ -533,6 +540,10 @@
   }
   .b05 .compare li {
     margin-bottom: 20px;
+  }
+  .b05 .order-line {
+    top: -100px;
+    position: relative;
   }
   .b05 .caviar-valid {
     width: 300px;
